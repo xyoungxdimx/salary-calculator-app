@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Gaji PPh 21 & BPJS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable dark mode
+        theme: {
+          extend: {
+            borderRadius: {
+              'xl': '1rem',
+            },
+            colors: {
+              primary: '#14B8A6', // Teal 500 - Modern & Vibrant
+              secondary: '#64748B', // Slate 500
+              // Light mode background
+              background: '#F8FAFC', // Slate 50
+              // Override the default gray palette with Slate for a cooler, modern feel
+              gray: {
+                50: '#F8FAFC',  // slate-50
+                100: '#F1F5F9', // slate-100
+                200: '#E2E8F0', // slate-200
+                300: '#CBD5E1', // slate-300
+                400: '#94A3B8', // slate-400
+                500: '#64748B', // slate-500
+                600: '#475569', // slate-600
+                700: '#334155', // slate-700
+                800: '#1E293B', // slate-800
+                900: '#0F172A', // slate-900
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background dark:bg-gray-900">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "Kalkulator Gaji Indonesia",
+  "description": "Aplikasi untuk menghitung gaji bersih karyawan di Indonesia, lengkap dengan perhitungan PPh 21, BPJS Ketenagakerjaan, dan BPJS Kesehatan sesuai peraturan terbaru.",
+  "requestFramePermissions": []
+}
