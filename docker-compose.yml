@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  kalkulator-gaji-app:
+    # Instruksikan Docker Compose untuk membangun image dari Dockerfile di direktori saat ini
+    build: .
+    # Beri nama container agar mudah diidentifikasi
+    container_name: kalkulator-gaji
+    # Beri nama image yang akan dibuat
+    image: kalkulator-gaji-indonesia:latest
+    # Mapping port: [PORT_DI_HOST]:[PORT_DI_CONTAINER]
+    # Aplikasi akan bisa diakses dari http://[IP_VM_ANDA]:3000
+    ports:
+      - "3000:80"
+    # Atur restart policy agar container otomatis berjalan kembali jika terjadi error atau server reboot
+    restart: unless-stopped

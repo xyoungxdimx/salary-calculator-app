@@ -1,0 +1,20 @@
+# Abaikan dependensi Node, tidak perlu disalin ke build context
+node_modules
+
+# Abaikan folder hasil build, akan dibuat di dalam container
+dist
+build
+
+# Abaikan file environment lokal
+.env
+.env.*
+!.env.example
+
+# Abaikan log dan file sementara
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+
+# Abaikan folder git
+.git
